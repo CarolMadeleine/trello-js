@@ -2,7 +2,7 @@ window.addEventListener("load", function(){
     var lista = document.getElementById("lista");
     var contenedorTrello = document.getElementById("contenedorTrello");
     // añadirLista();
-  });
+
 
 /*function añadirLista(){
 	var caja = document.createElement("div");
@@ -12,7 +12,7 @@ window.addEventListener("load", function(){
       caja.appendChild(texto);
     } para poder añadir un div con texto*/
 
-lista.addEventListener("click", function(e){
+lista.addEventListener("click", function(){
 
 	lista.classList.add("sevaya");
 
@@ -34,6 +34,32 @@ lista.addEventListener("click", function(e){
       inputLista.classList.add("inputLista");
       inputLista.setAttribute("placeholder", "Añadir una lista ...");
       añadir.insertBefore(inputLista, añadir.childNodes[0]);
+	
+	botonLista.addEventListener("click", function(e){
+		e.preventDefault();
+
+		añadir.classList.add("form2");
+
+		var mensajeTrello = document.createElement("div")
+		mensajeTrello.classList.add("mensajeTrello");
+    mensajeTrello.innerText = inputLista.value;
+    contenedorTrello.insertBefore(mensajeTrello, contenedorTrello.childNodes[0]);
+
+    var añadirTarjeta= document.createElement("a");
+    añadirTarjeta.classList.add("añadirTarjeta");
+    contenedorTrello.insertBefore(añadirTarjeta, contenedorTrello.childNodes[1]);
+    var textoTarjeta = document.createTextNode("Añadir una Tarjeta...");
+    añadirTarjeta.appendChild(textoTarjeta);
+
+    // var contedorMensaje= document.createElement("div");
+    // contedorMensaje.classList.add("contedorMensaje");
+    // contenedorTrello.insertBefore(contedorMensaje, contenedorTrello.childNodes[0]);
+
+
+	});
 
 });
-	
+
+
+
+});
