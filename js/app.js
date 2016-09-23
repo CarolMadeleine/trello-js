@@ -3,7 +3,6 @@ window.addEventListener("load", function(){
     var contenedorTrello = document.getElementById("contenedorTrello");
     // añadirLista();
 
-
 /*function añadirLista(){
 	var caja = document.createElement("div");
       caja.classList.add("listaTrello");
@@ -36,8 +35,8 @@ lista.addEventListener("click", function(){
       añadir.insertBefore(inputLista, añadir.childNodes[0]);
 	
 	botonLista.addEventListener("click", function(e){
-		e.preventDefault();
 
+		e.preventDefault();
 		añadir.classList.add("form2");
 
 		var mensajeTrello = document.createElement("div")
@@ -51,9 +50,6 @@ lista.addEventListener("click", function(){
     var textoTarjeta = document.createTextNode("Añadir una Tarjeta...");
     añadirTarjeta.appendChild(textoTarjeta);
 
-    // var contedorMensaje= document.createElement("div");
-    // contedorMensaje.classList.add("contedorMensaje");
-    // contenedorTrello.insertBefore(contedorMensaje, contenedorTrello.childNodes[0]);
 
 
 	});

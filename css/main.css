@@ -7,68 +7,71 @@
 body{
   background-color: #519839;
 }
-.navbar-default{
-	background-color: #458131;
-	border-color: #458131;
+.barra{
+  background-color: #458131;
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
 }
-.navbar{
-	border-radius: 0px;
+.barra2{
+  float: right;
 }
-.navbar-form{
-	padding: 0px;
-}
-.navbar-collapse{
-	padding-left: 0px;
-}
-.btn{
-	padding: 0px 4px 0px 30px;
-}
+ 
+/*BOTON NAV*/
 .btn-default{
 	background-color: rgb(81, 152, 57);
-	border-color: rgb(81, 152, 57);
+	border: none;
 	font-weight: bold;
-    color: #f3f3f3;
-    min-height: 30px;
-    border-radius: 3px;
+  color: #f3f3f3;
+  border-radius: 3px;
+  padding: 7px;
 }
-.header-btn-text{
-	padding: 0px 8px;
+.btn-default:hover{
+  background-color: #8BB07E;
+  color: white;
 }
-.header-btn{
-	color: #f3f3f3;
-    display: block;
-    font-weight: 700;
-    line-height: 30px;
-    min-width: 30px;
-    padding: 0;
+.btn2, .btn4, .btn5{
+  margin-top: 8px;
+  padding: 7px 10px;
 }
+
+/*IMAGENES*/
+.nombre{
+  margin-bottom: 16px;
+  margin-left: 10px;
+}
+.logo{
+  position: relative;
+  left: 240px;
+  top: 9px;
+}
+.fotoPerfil{
+  border: 1px solid white;
+  margin: 0px 5px 0px 0px;
+  float: left;
+
+}
+
+
 .form-control{
 	background-color: rgba(255,255,255,.3);
 	border-radius: 3px;
-    border: none;
-    color: rgba(255,255,255,.5);
-    float: left;
-    font-size: 13px;
-    height: 30px;
-    margin: 0;
-    min-height: 30px;
-    padding-right: 30px;
-    padding-left: 8px;
-    line-height: 19px;
-    -webkit-transition: width 150ms;
-    transition: width 150ms;
-    width: 180px;
+  border: none;
+  color: rgba(255,255,255,.5);
+  padding: 0 30px 0 8px;
 }
-
-
+.form-control:hover{
+  background-color: #8BB07E;
+}
 /*AÑADIR LISTA*/
+
 .lista{
     padding: 12px 120px 12px 12px;
     color: rgba(255,255,255,0.7);
     border-radius: 3px;
     background-color: #478632;
     font-size: 14px;
-    margin: 10px;
+    margin: 0 16px;
 }
 .lista:hover{
    background-color: #3A6C2D;
@@ -83,7 +86,7 @@ body{
     height: 90px;
     padding: 4px;
     width: 270px;
-    margin: 10px;
+    margin: 4px 16px;
 }
 .inputLista{
     background: rgba(0,0,0,.05);
@@ -113,12 +116,11 @@ body{
 .form2{
   display: none;
 }
-
 .añadirTarjeta{
   border-radius: 0 0 3px 3px;
   color: #8c8c8c;
-  padding: 12px 120px 12px 12px;
-  margin: 5px;
+  padding: 10px 120px 10px 10px;
+  margin: 5px 16px;
   text-decoration: none;
   background-color: #E2E4E6;
 }
@@ -129,25 +131,28 @@ body{
 .mensajeTrello{
   border-radius: 3px 3px 0 0 ;
   color: #4D4D4D;
+  padding: 10px 120px 10px 10px;
   font-weight: bold;
-  padding: 12px 120px 12px 12px;
-  margin: 5px;
+  margin: 5px 16px;
   background-color: #E2E4E6;
-  width: 260px;
+  width: 258px;
 }
-
+ 
+/*VERSION 0.3*/
 
 
 
 /*ICONOS*/
 .icon-cross:before {
   color: #9E9E9E;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 10px;
   position: relative;
-  top: 17px;
+  top: 19px;
 }
 .icon-search:before {
-  content: "\e986";
+  color: white;
+}
+.icon-plus:before {
   color: white;
 }
