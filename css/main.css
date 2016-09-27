@@ -52,7 +52,6 @@ body{
 
 }
 
-
 .form-control{
 	background-color: rgba(255,255,255,.3);
 	border-radius: 3px;
@@ -63,9 +62,10 @@ body{
 .form-control:hover{
   background-color: #8BB07E;
 }
-/*AÑADIR LISTA*/
 
+/*AÑADIR LISTA*/
 .lista{
+    display: inline-block;
     padding: 12px 120px 12px 12px;
     color: rgba(255,255,255,0.7);
     border-radius: 3px;
@@ -79,13 +79,22 @@ body{
 .sevaya{
   display: none;
 }
+
 /*FORM*/
-.listaTrello{
+.aparecer{
+  display: inline-block;
+}
+.aparecer2{
+  display: inline-block;
+  position: relative;
+  bottom: 36px;
+}
+.añadir{
     border-radius: 3px;
     background-color: #E2E4E6;
     height: 90px;
     padding: 4px;
-    width: 270px;
+    width: 290px;
     margin: 4px 16px;
 }
 .inputLista{
@@ -112,7 +121,6 @@ body{
 }
 
 /*VERSION 0.2*/
-
 .form2{
   display: none;
 }
@@ -120,7 +128,7 @@ body{
   border-radius: 0 0 3px 3px;
   color: #8c8c8c;
   padding: 10px 120px 10px 10px;
-  margin: 5px 16px;
+  margin: 0px 16px;
   text-decoration: none;
   background-color: #E2E4E6;
 }
@@ -133,7 +141,7 @@ body{
   color: #4D4D4D;
   padding: 10px 120px 10px 10px;
   font-weight: bold;
-  margin: 5px 16px;
+  margin: -4px 16px;
   background-color: #E2E4E6;
   width: 258px;
 }
